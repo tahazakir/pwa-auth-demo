@@ -12,7 +12,7 @@ export class AppHome extends LitElement {
 
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
-  @property() message = 'Welcome!';
+  @property() message = 'Authentication Demo - PWA';
 
   static get styles() {
     return [
@@ -82,7 +82,15 @@ export class AppHome extends LitElement {
       <app-header></app-header>
 
       <main>
+
         <div id="welcomeBar">
+
+          <pwa-auth
+            microsoftkey="..."
+            googlekey="..."
+            facebookkey="...">
+          </pwa-auth>
+
           <sl-card id="welcomeCard">
             <div slot="header">
               <h2>${this.message}</h2>
