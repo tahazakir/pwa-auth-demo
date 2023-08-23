@@ -86,9 +86,11 @@ export class AppHome extends LitElement {
         <div id="welcomeBar">
 
           <pwa-auth
+            appearance="list"
             microsoftkey="..."
             googlekey="..."
-            facebookkey="...">
+            facebookkey="..."
+            applekey="...">
           </pwa-auth>
 
           <sl-card id="welcomeCard">
